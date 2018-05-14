@@ -1,1 +1,44 @@
-<h1>hi</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ekadosi Api</title>
+	<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+button{
+	font-size: 20px;
+	padding: 10px;
+	border:none;
+	border-radius:5px;
+	background-color:#f69;
+	font-weight:bold;  
+}
+#res{
+	background-color: rgba(102, 255, 153, 0.5);
+	width: 55%;
+}
+</style>
+</head>
+<body>
+	
+	<p><button id="send">Click to Check Upcoming Ekadosi</button>
+	<table id="res"></table></p>
+	<h1>Ekadosir Talika - 2018</h1>
+	<table id="tt"></table>
+	<script type="text/javascript" src="ekadosi_api.js"></script>
+</body>
+</html>
