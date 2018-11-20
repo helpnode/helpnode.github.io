@@ -198,5 +198,5 @@ const ekadosi_data=[
 // }
 
 window.onload = function(){
-document.getElementById('tt').innerHTML =`${ekadosi_data.map(ek=> `<tr><td>Ekadosir Name: ${ek.bn_name}</td><td>Date: ${ek.bn_date} -${ek.day_name} </td><td>Paroner Somoy: ${ek.breakfast}</td><td>${ek.en_date}</td></tr>`)}`;
+document.getElementById('tt').innerHTML =`${ekadosi_data.map((ek, a)=> `<tr><td>${ek.bn_name}</td><td>${ek.bn_date} -${ek.day_name} </td><td>${ek.breakfast}</td><td>${ek.en_date}</td></tr>`)}`;
 }
