@@ -177,17 +177,18 @@ const ekadosi_data=[
 ];
 
 
-// let send = document.getElementById("send");
-// let date1= new Date;
+ let send = document.getElementById("send");
+ let date1= new Date;
 
 // var ekadosiDate= 
 // [ "2018 01 13", "2018 01 28", "2018 02 11", "2018 02 26", "2018 03 13", "2018 03 27", "2018 04 12", "2018 04 26", "2018 05 11", "2018 05 25", "2018 06 10", "2018 07 09", "2018 07 23", "2018 08 08", "2018 08 22", "2018 09 06", "2018 09 20", "2018 10 05", "2018 10 20", "2018 11 04", "2018 11 19", "2018 12 03", "2018 12 19", "2019 01 02" ];
-// var date2;
-// function checkDate(ekadosi){
-// 	 date2 = new Date(ekadosi);
-// 	 return date1 <= date2;
-// }
-// var result= ekadosiDate.filter(checkDate);
+ var date2;
+ function checkDate(ekadosi){
+	 date2 = new Date(ekadosi);
+ 	 return date1 <= date2;
+ }
+ var result= ekadosi_data.map(r=> return r.en_date);
+ result.filter(checkDate);
 
 // // alert(ekadosiDate.indexOf(result[0]));
 // let ekadosi_index = ekadosiDate.indexOf(result[0]);
